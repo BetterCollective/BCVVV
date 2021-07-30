@@ -11,6 +11,7 @@
 
 # Or, if your machine is already turned on:
 # vagrant provision
+#
 
 # These are your websites, and their names map on to the folders they're
 # located in. See the docs for how to define these, and what all the keys
@@ -20,60 +21,40 @@ sites:
   # latest version of WordPress, can be used for client work and testing
   # Check the readme at https://github.com/Varying-Vagrant-Vagrants/custom-site-template
   #
-  # BC comment: Eventually create custom BC site template dedicated for plugin development 
-  #
+  # Eventually create custom BC site template dedicated for plugin development 
   bc-wordpress-example:
     skip_provisioning: false
     description: "A standard WP install, useful for building plugins, testing things, etc."
     repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
     hosts:
-      - bcvvv.test
+      - example.bcvvv.test
     custom:
       wpconfig_constants:
         WP_DEBUG: true
         WP_DEBUG_LOG: true
         WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
 
-  # Example of a PHP5.6, custom WP version, existing site named "guidedupari-revamp" with domain "guidedupari.test"
-  #  guidedupari-revamp:
-  #    skip_provisioning: false
-  #    description: "guidedupari-revamp"
-  #    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-  #    nginx_upstream: php56 # Nginx is not aligned with the Plesk stack but might be useful anyway
-  #    hosts:
-  #      - guidedupari.com 
-  #      - guidedupari.test
-  #    folders:
-  #      public_html/:
-  #        git:
-  #          repo: git@github.com:BetterCollective/wordpress-guidedupari-com.git
-  #          branch: staging
-  #          overwrite_on_clone: true
-  #          pull: true 
-  #    custom:
-  #      wpconfig_constants:
-  #        WP_VERSION: 4.7
-  #        WP_DEBUG: true
-  #        WP_DEBUG_LOG: true
-  #        WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
-
-  # Example of a site with a wp-plugin handled from an external git repo
-  #
-  # vip:
-  #   repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-  #   hosts:
-  #     - vip.test
-  #   folders:
-  #     public_html/wp-content/:
-  #       git:
-  #         repo: https://github.com/Automattic/vip-go-skeleton.git
-  #         overwrite_on_clone: true
-  #     public_html/wp-content/mu-plugins:
-  #       git:
-  #         repo: https://github.com/Automattic/vip-go-mu-plugins.git
-  #         overwrite_on_clone: true
-  #         hard_reset: true
-  #         pull: true
+  guidedupari-revamp:
+    skip_provisioning: false
+    description: "guidedupari-revamp"
+    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+    nginx_upstream: php56 # Nginx is not aligned with the Plesk stack but might be useful anyway
+    hosts:
+      - guidedupari.com 
+      - guidedupari.test
+    folders:
+      public_html/:
+        git:
+          repo: git@github.com:BetterCollective/wordpress-guidedupari-com.git
+          branch: staging
+          overwrite_on_clone: true
+          pull: true 
+    custom:
+      wpconfig_constants:
+        WP_VERSION: 4.7
+        WP_DEBUG: true
+        WP_DEBUG_LOG: true
+        WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
 
   # The following commented out site configuration will create a standard WordPress
   # site in www/example-site/ available at http://mysite.test.
