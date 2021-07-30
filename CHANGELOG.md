@@ -6,7 +6,14 @@ permalink: /docs/en-US/changelog/
 
 # Changelog
 
-## 3.7.x ( 2021 )
+## 3.7.2 ( 2021 )
+
+
+## 3.7.1 ( 2021 July 20th )
+
+### Bug Fixes
+
+* Fixed dashboard updating
 
 ### Enhancements
 
@@ -47,6 +54,8 @@ permalink: /docs/en-US/changelog/
 * Sync clocks before provisioning if ntpdate is available to avoid Apt mirror time issues
 * Fixed cloning the dashboard git repository with unknown remote branches
 * Skip mounting custom folders for skipped sites
+* Improved WP CLI ownership and permission settings
+* Removed WP CLI doctor subcommand package that was causing issues for some users
 
 ## 3.6.2 ( 2021 March 17th )
 
