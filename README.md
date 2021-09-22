@@ -4,8 +4,9 @@
 
 BCVVV is a fork of VVV. We strived to stick as much as possible to the origin repository, but setup a guideline for configuration and development.
 
-Local development environment and guideline for Wordpress at Better Collective
-- Always refer to the official VVV documentation, ./config/default-config.yml, and DevOps documentation.
+Local development environment and guideline for Wordpress at Better Collective.
+
+Always refer to the official VVV documentation, ./config/default-config.yml, and DevOps documentation.
 
 Be aware that 'existing site' refer to a site that is already hosted on Plesk that you want to develop on, and 'new site' refer to a site that is NOT already Plesk, however, that you want to add.
 
