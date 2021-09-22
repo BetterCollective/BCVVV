@@ -11,6 +11,12 @@ Be aware that 'existing site' refer to a site that is already hosted on Plesk th
 
 This util is not meant as a configuration manager, however, as a guideline and a place to start.
 
+## Prerequisities
+
+- VirtualBox
+- Vagrant
+- Python 3
+
 ## How To Use
 
 To use it, download and install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org/). Then, clone this repository and run:
@@ -25,19 +31,18 @@ Install requirements:
 pip3 install -r ./requirements.txt
 ```
 
-Usage:
+Run `bcvvv.py`, read notes, and follow instructions carefully:
 ```shell
 ./bcvvv.py
 ```
 
-Run `bcvvv.py`, read notes, and follow instructions carefully.
-
+## Other
 
 When it's done, visit [http://vvv.test](http://vvv.test).
 
 The online documentation contains more detailed [installation instructions](https://varyingvagrantvagrants.org/docs/en-US/installation/).
 
-Original VVV readme below
+Original VVV readme has been preserved below.
 
 # VVV ( Varying Vagrant Vagrants )
 
