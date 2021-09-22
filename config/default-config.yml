@@ -16,46 +16,32 @@
 # located in. See the docs for how to define these, and what all the keys
 # and options are
 sites:
-
   # latest version of WordPress, can be used for client work and testing
   # Check the readme at https://github.com/Varying-Vagrant-Vagrants/custom-site-template
-  #
-  # BC comment: Eventually create custom BC site template dedicated for plugin development 
-  #
+
+  # WordPress example with commented lines for Git integration, and PHP and Wordpress version specification
   bc-wordpress-example:
     skip_provisioning: false
-    description: "A standard WP install, useful for building plugins, testing things, etc."
+    description: "Standard Wordpress example"
     repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+#   nginx_upstream: php74 # php version
     hosts:
+      - bcvvv.com
       - bcvvv.test
+#   Sync git files for specific folder
+#   folders:
+#     public_html/:
+#       git:
+#         repo: git@github.com:BetterCollective/wordpress-guidedupari-com.git # change to desired git repository
+#         branch: staging
+#         overwrite_on_clone: true
+#         pull: true 
     custom:
       wpconfig_constants:
+#       WP_VERSION: 4.7 # specify Wordpress version
         WP_DEBUG: true
         WP_DEBUG_LOG: true
         WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
-
-  # Example of a PHP5.6, custom WP version, existing site named "guidedupari-revamp" with domain "guidedupari.test"
-  #  guidedupari-revamp:
-  #    skip_provisioning: false
-  #    description: "guidedupari-revamp"
-  #    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-  #    nginx_upstream: php56 # Nginx is not aligned with the Plesk stack but might be useful anyway
-  #    hosts:
-  #      - guidedupari.com 
-  #      - guidedupari.test
-  #    folders:
-  #      public_html/:
-  #        git:
-  #          repo: git@github.com:BetterCollective/wordpress-guidedupari-com.git
-  #          branch: staging
-  #          overwrite_on_clone: true
-  #          pull: true 
-  #    custom:
-  #      wpconfig_constants:
-  #        WP_VERSION: 4.7
-  #        WP_DEBUG: true
-  #        WP_DEBUG_LOG: true
-  #        WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
 
   # Example of a site with a wp-plugin handled from an external git repo
   #
