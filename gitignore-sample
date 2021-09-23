@@ -11,6 +11,10 @@ wp-content/cache/*
 wp-content/upgrade/*
 wp-content/uploads/*
 !wp-content/uploads/.htaccess
+wp-content/languages/*
+wp-content/ai1wm-backups/*
+wp-content/ewww/
+wp-content/db.php
 
 /backup/
 
@@ -25,6 +29,7 @@ sitemap.*
 *.DS_Store
 *[Tt]humbs.db
 *.Trashes
+/.idea/
 
 # Exlcude node_modules
 node_modules/
@@ -53,4 +58,4 @@ node_modules/
 *.zip
 
 /phpmyadmin/
-/.htaccess
+.htaccess

@@ -19,7 +19,7 @@ print("- Always refer to the official VVV documentation, ./config/default-config
 print()
 print("Be aware that 'existing site' refer to a site that is already hosted on Plesk that you want to develop on, and 'new site' refer to a site that is NOT already Plesk, however, that you want to add.")
 print()
-print("This util is not meant as a configuration manager, however, as a guideline and a place to start.")
+print("This util is not meant as a configuration manager, but as a guideline and a place to get started.")
 print()
 
 # Create vvv yaml config if does not exist
@@ -34,7 +34,7 @@ if file_exists:
 	pass
 else:
 	copyfile(config_sample, config)
-	print("{0} does not exist. {0} has been be created from {1} and will be used in this util.".format(config, config_sample))
+	print("{0} does not exist. {0} has been created from {1} and will be used in this util.".format(config, config_sample))
 	print()
 
 # yaml quote representer
