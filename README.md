@@ -10,7 +10,7 @@ Always refer to the official VVV documentation, ./config/default-config.yml, and
 
 Be aware that 'existing site' refer to a site that is already hosted on Plesk that you want to develop on, and 'new site' refer to a site that is NOT already Plesk, however, that you want to add.
 
-This util is not meant as a configuration manager, however, as a guideline and a place to start.
+This util is not meant as a configuration manager, but as a guideline and a place to get started.
 
 ## Prerequisities
 
