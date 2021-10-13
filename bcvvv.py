@@ -375,7 +375,7 @@ def bcvvv_edit_sites():
 
 def bcvvv_apply_changes():
 	# This is a temporary fix to a bug that has been known in VVV for a long time.
-	os.system('vagrant ssh -c "rm -f /usr/local/bin/wp"; vagrant halt; vagrant up --provision')
+	os.system('vagrant halt; vagrant up --provision')
 
 def bcvvv_exit():
 	sys.exit()
