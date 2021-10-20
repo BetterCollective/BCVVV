@@ -41,7 +41,7 @@ Run `bcvvv.py`, read notes, and follow instructions carefully:
 
 ### Windows
 
-Preferably run `bcvvv.py` and Vagrant with the [Git Bash](https://gitforwindows.org/) terminal, and make sure to install it with MinTTY and not Windows' default console. Allow any belong app (cli.exe, VirtualBox, etc.) that wants access to your local harddrive.
+Preferably run `bcvvv.py` and Vagrant with the [Git Bash](https://gitforwindows.org/) terminal, and make sure to install it with MinTTY and not Windows' default console. Allow any belonging app (cli.exe, VirtualBox, etc.) that wants access to your local harddrive. The reason is that Windwos does not support unix sockets, but with Git Bash you will be able to use e.g., the `ssh-agent` command to forward your key, or `pip` to install necessary Python modules.
 
 ### .gitignore specific to BC for each new site
 
@@ -58,6 +58,10 @@ For each site created, both new and existing, `.test` tld will be appended autom
 ### nginx versus apache
 
 A discrepancy that we have to be aware of in this local development environment and our Plesk farm, is that our Plesk farm uses Apache for all sites, and the local development environment uses Nginx. This can create discrepancy in regards of custom Apache configuration particularly for `.htaccess` that will not be applied for sites developed in this environment. The nginx configuration is configured for Wordpress to a high degree, and it should not be a problem. If you are suspicious that problems occur due to the discprenancy of nginx versus apache please contact DevOps.
+
+### Private Git repository access
+
+As instructed in the `bcvvv.py` script, when successfully setting up a new site, you have to forward your ssh key to work with the local development environment and private Git repositories of the installed Wordpress applications. When you have added the necessary Git configuration in VVV (example in `./config/default-config.yml` of this repository), employ the `ssh-add -K [private-key-path]` command to add your key, and `ssh-agent` to forward it.
 
 ## Other
 
