@@ -181,13 +181,13 @@ def bcvvv_setup_new_site():
 
 		# Copy custom gitignore 
 		print()
-		print("Copying ./gitignore-sample to ./www/{}/public_html/.gitignore".format(new_site_title_no_spaces))
+		print("Copying ./bc-gitignore-sample to ./www/{}/public_html/.gitignore".format(new_site_title_no_spaces))
 		dir_exists = os.path.isdir("./www/{}/public_html/".format(new_site_title_no_spaces))
 		
 		if dir_exists is True:
-			copyfile("./gitignore-sample", "./www/{}/public_html/.gitignore".format(new_site_title_no_spaces))
+			copyfile("./bc-gitignore-sample", "./www/{}/public_html/.gitignore".format(new_site_title_no_spaces))
 		else:
-			print("./www/{}/public_html/ does not exist and gitignore can't be created. Please copy/paste the .gitignore manually.".format(new_site_title_no_spaces))
+			print("./www/{}/public_html/ does not exist and gitignore can't be created. Please copy/paste the contents of ./bc-gitignore-sample the ./gitignore manually.".format(new_site_title_no_spaces))
 
 		# print information about ssh agent, github and git integration and docs
 		print()

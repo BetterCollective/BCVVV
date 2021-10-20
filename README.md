@@ -14,8 +14,8 @@ This util is not meant as a configuration manager, but as a guideline and a plac
 
 ## Prerequisities
 
-- VirtualBox
-- Vagrant
+- VirtualBox (latest)
+- Vagrant (latest)
 - Python 3
 
 ## How To Use
@@ -39,6 +39,10 @@ Run `bcvvv.py`, read notes, and follow instructions carefully:
 
 ## Good to know
 
+### Windows
+
+Preferably run `bcvvv.py` and Vagrant with the [Git Bash](https://gitforwindows.org/) terminal, and make sure to install it with MinTTY and not Windows' default console. Allow any belong app (cli.exe, VirtualBox, etc.) that wants access to your local harddrive.
+
 ### .gitignore specific to BC for each new site
 
 This repository contains a file in the root folder called `gitignore-sample` that will be copied into each sites webroot when a new site is added with the `bcvvv.py` script. In case you want to configure sites manually, you can copy the contents of this into a file called `.gitignore` to achieve the same configuration on initiating a new site migration in Plesk. 
@@ -61,34 +65,4 @@ When it's done, visit [http://vvv.test](http://vvv.test).
 
 The online documentation contains more detailed [installation instructions](https://varyingvagrantvagrants.org/docs/en-US/installation/).
 
-Original VVV readme has been preserved below.
-
-# VVV ( Varying Vagrant Vagrants )
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/206b06167aaf48aab24422cd417e8afa)](https://www.codacy.com/gh/Varying-Vagrant-Vagrants/VVV?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Varying-Vagrant-Vagrants/VVV&amp;utm_campaign=Badge_Grade) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/varying-vagrant-vagrants/vvv.svg)](http://isitmaintained.com/project/varying-vagrant-vagrants/vvv "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/varying-vagrant-vagrants/vvv.svg)](http://isitmaintained.com/project/varying-vagrant-vagrants/vvv "Percentage of issues still open")
-
-VVV is a local developer environment, mainly aimed at [WordPress](https://wordpress.org) developers. It uses [Vagrant](https://www.vagrantup.com) and VirtualBox, and can be used to build sites, and contribute to WordPress.
-
-## How To Use
-
-To use it, download and install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org/). Then, clone this repository and run:
-
-```shell
-vagrant plugin install --local
-vagrant up --provision
-```
-
-When it's done, visit [http://vvv.test](http://vvv.test).
-
-The online documentation contains more detailed [installation instructions](https://varyingvagrantvagrants.org/docs/en-US/installation/).
-
-* **Web**: [https://varyingvagrantvagrants.org/](https://varyingvagrantvagrants.org/)
-* **Contributing**: Contributions are more than welcome. Please see our current [contributing guidelines](https://varyingvagrantvagrants.org/docs/en-US/contributing/). Thanks!
-
-## Minimum System requirements
-
-[For system requirements, please read the system requirements documentation here](https://varyingvagrantvagrants.org/docs/en-US/installation/software-requirements/)
-
-## Software included
-
-For a comprehensive list, please see the [list of installed packages](https://varyingvagrantvagrants.org/docs/en-US/installed-packages/).
+[Click here to access the original VVV README.md](https://github.com/Varying-Vagrant-Vagrants/VVV/blob/develop/README.md).
