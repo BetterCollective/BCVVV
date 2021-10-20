@@ -18,7 +18,7 @@ This util is not meant as a configuration manager, but as a guideline and a plac
 - [Vagrant (latest)](https://www.vagrantup.com)
 - Python 3
 
-## How to Use
+## How to use
 
 Clone this repository, enter the directory, and run the following.
 
