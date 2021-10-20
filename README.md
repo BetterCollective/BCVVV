@@ -14,13 +14,13 @@ This util is not meant as a configuration manager, but as a guideline and a plac
 
 ## Prerequisities
 
-- VirtualBox (latest)
-- Vagrant (latest)
+- [VirtualBox (latest)](https://www.virtualbox.org/)
+- [Vagrant (latest)](https://www.vagrantup.com)
 - Python 3
 
 ## How To Use
 
-To use it, download and install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org/). Then, clone this repository and run:
+Clone this repository, enter the directory, and run the following command.
 
 ```shell
 vagrant plugin install --local
@@ -61,7 +61,7 @@ A discrepancy that we have to be aware of in this local development environment 
 
 ### Private Git repository access
 
-As instructed in the `bcvvv.py` script, when successfully setting up a new site, you have to forward your ssh key to work with the local development environment and private Git repositories of the installed Wordpress applications. When you have added the necessary Git configuration in VVV (example in `./config/default-config.yml` of this repository), employ the `ssh-add -K [private-key-path]` command to add your key, and `ssh-agent` to forward it.
+Employ the `ssh-add -K [private-key-path]` command to add your key, and the `ssh-agent` command to forward it. This is necessary when you have to work with VVV and a private Git repository. An example of the VVV configuration can be found in `./config/default-config.yml`.
 
 ## Other
 
