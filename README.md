@@ -20,7 +20,7 @@ This util is not meant as a configuration manager, but as a guideline and a plac
 
 ## How To Use
 
-Clone this repository, enter the directory, and run the following command.
+Clone this repository, enter the directory, and run the following.
 
 ```shell
 vagrant plugin install --local
