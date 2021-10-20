@@ -61,7 +61,7 @@ A discrepancy that we have to be aware of in this local development environment 
 
 ### Private Git repository access
 
-Employ the `ssh-add -K [private-key-path]` command to add your key, and the `ssh-agent` command to forward it. This is necessary when you have to work with VVV and a private Git repository. An example of the VVV configuration can be found in `./config/default-config.yml`.
+Run `ssh-agent` to ensure the ssh forwarding agent is running. Run `ssh-add -K [private-key-path]` to add it and `ssh-add -L` to list forwarded keys. This is necessary when you have to work with VVV and a private Git repository. An example of the VVV configuration can be found in `./config/default-config.yml`.
 
 ## Other
 
