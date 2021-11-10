@@ -79,14 +79,6 @@ sites:
   #   hosts:
   #     - trunk.wordpress.test
 
-  # The following commented out site configuration will create a standard WordPress
-  # site in www/example-site/ available at http://my-example-site.test.
-  # Remember, whitespace is significant! Tabs and spaces mean different things
-  #example-site:
-  #  repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-  #  hosts:
-  #    - my-example-site.test
-
 # Extensions https://varyingvagrantvagrants.org/docs/en-US/utilities/
 # are system level items that aren't websites, that install tools or packages
 # the core extensions install tools such as phpmyadmin or new PHP versions
