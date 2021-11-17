@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MariaDB 10.5 Amsterdam
 #deb [arch=amd64,arm64,ppc64el] http://ams2.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu bionic main
 #deb-src http://ams2.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu bionic main
@@ -19,8 +20,13 @@ deb-src http://ftp.yz.yamagata-u.ac.jp/pub/dbms/mariadb/repo/10.5/ubuntu bionic 
 # deb [arch=amd64,arm64,ppc64el] http://mirrors.piconets.webwerks.in/mariadb-mirror/repo/10.5/ubuntu bionic main
 # deb-src http://mirrors.piconets.webwerks.in/mariadb-mirror/repo/10.5/ubuntu bionic main
 =======
+=======
+>>>>>>> 0a2accce84eb40789afd82f16713d99baf602f07
 # MariaDB 10.5 repository list - created  UTC
 # https://mariadb.org/download/
 deb [arch=amd64,arm64,ppc64el,s390x] https://mirror.rackspace.com/mariadb/repo/10.5/ubuntu bionic main
 deb-src https://mirror.rackspace.com/mariadb/repo/10.5/ubuntu bionic main
+<<<<<<< HEAD
+>>>>>>> 0a2accce84eb40789afd82f16713d99baf602f07
+=======
 >>>>>>> 0a2accce84eb40789afd82f16713d99baf602f07
