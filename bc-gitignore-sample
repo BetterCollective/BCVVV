@@ -1,0 +1,69 @@
+# .gitignore for Wordpress applications at Better Collective
+
+# Exclude shared wp themes - these are deployed from our wp theme server
+#
+# bc-core (parent theme)
+wp-content/themes/wp-theme-bc-core
+
+# Other shared child themes can be added below
+# wp-content/themes/wp-theme-bc-core-child-example
+
+# Exclude wp plugins - these are deployed from our wp plugin server
+!/wp-content/plugins
+/wp-content/plugins/*
+
+# Exclude specific wp-content sub-directories
+wp-content/languages/*
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
+!wp-content/uploads/.htaccess
+wp-content/languages/*
+wp-content/ai1wm-backups/*
+wp-content/ewww/
+wp-content/db.php
+
+/backup/
+
+# Exclude wp-config.php
+wp-config.php
+
+# Exclude sitemap
+sitemap.*
+
+# Exclude OS generated files
+~*
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+/.idea/
+
+# Exlcude node_modules
+node_modules/
+
+# Exclude logs and db dumps
+*.log
+*.sql
+*.sqlite
+
+# Exclude compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Exclude compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+/phpmyadmin/
+.htaccess
