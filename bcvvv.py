@@ -120,8 +120,8 @@ def bcvvv_setup_new_site():
 				'{}.test'.format(new_site_answers['new_site_domain']),
 			],
 			'custom': {
+				'wp_version': new_site_answers['new_site_wp_version'],
 				'wpconfig_constants': {
-				'WP_VERSION': new_site_answers['new_site_wp_version'],
 				'WP_DEBUG': True,
 				'WP_DEBUG_LOG': True,
 				'WP_DISABLE_FATAL_ERROR_HANDLER': True
@@ -293,8 +293,8 @@ def bcvvv_setup_existing_site():
 				}
 			},
 			'custom': {
+				'wp_version': existing_site_answers['existing_site_wp_version'],
 				'wpconfig_constants': {
-				'WP_VERSION': existing_site_answers['existing_site_wp_version'],
 				'WP_DEBUG': True,
 				'WP_DEBUG_LOG': True,
 				'WP_DISABLE_FATAL_ERROR_HANDLER': True

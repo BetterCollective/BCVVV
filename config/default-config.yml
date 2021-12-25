@@ -37,8 +37,8 @@ sites:
 #         overwrite_on_clone: true
 #         pull: true 
     custom:
+#     wp_version: 4.7 # specify Wordpress version
       wpconfig_constants:
-#       WP_VERSION: 4.7 # specify Wordpress version
         WP_DEBUG: true
         WP_DEBUG_LOG: true
         WP_DISABLE_FATAL_ERROR_HANDLER: true # To disable in WP 5.2 the FER mode
