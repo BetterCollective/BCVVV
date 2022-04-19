@@ -6,18 +6,23 @@ permalink: /docs/en-US/changelog/
 
 # Changelog
 
-## 3.9 ( 2022 )
+## 3.9.1 ( 2022 April 13th )
 
 ### Enhancements
 
 * VVV now switches to Parallels by default on Arm machines ( #2560 )
 * Adds default Nginx pages for 40x and 50x errors to help on troubleshooting ( #2345 )
+* NVM is now used to manage NodeJS, VVV will auto-switch the node version to that used by `.nvmrc` when inside the guest VM ( #2581 )
+* The PHP Redis extension is now installed with the default PHP version ( #2582 )
 
 ### Bug Fixes
 
 * Refactored the certificate check to check for the certificate file, not the TLS-CA utility ( #2563 )
 * Fixed an issue with `composer create-project` not running when specified in `config.yml` ( #2565 )
 * Switched obsolete mirror check for MariaDB to the one already used (#2575)
+* Fixed a broken warning in the network checks
+* Fixed an issue with `/root/.local/share/composer` when provisioning (#2589)
+* Fixed an issue with the new Git release that was crashing the provisioner beucase of wrong user permissions ( #2593 )
 
 ## 3.8.1 ( 2021 November 15th )
 
